@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap");
 .navbar.bg-transp-ebony {
   background: rgba(5, 8, 15, 0.95);
+  transition: background-color 0.5s;
 }
 .navbar .navbar-brand h1, .navbar .navbar-brand .h1 {
   text-shadow: 0 0 15px #0bc6f2;
@@ -23,9 +24,11 @@
 .card-showcase .filter {
   position: relative;
 }
-.card-showcase .filter img {
+.card-showcase .filter .showcase-img {
+  height: 110vh;
   width: 100%;
-  height: auto;
+  background: url("/images/showcase.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
 }
 .card-showcase .filter .filter-apply {
   background: rgba(5, 8, 15, 0.45);
@@ -55,10 +58,6 @@
 .cases {
   background: #044f60;
 }
-.cases .case img {
-  height: 290px;
-  width: auto;
-}
 
 @media screen and (max-width: 768px) {
   .card-showcase .card-img-overlay {
@@ -69,7 +68,7 @@
   }
 
   .card-showcase .filter img {
-    height: 62vh;
+    height: 85vh;
     width: auto;
   }
 }

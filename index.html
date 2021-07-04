@@ -12,7 +12,7 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
       <div class="container-fluid ps-sm-5 pe-sm-5">
         <a class="navbar-brand" href="index.html"
-          ><h1 class="fs-4 fw-bold">PCArt</h1></a
+          ><h1 class="fs-4 fw-bold font-monospace">PCArt</h1></a
         >
         <button
           class="navbar-toggler"
@@ -44,7 +44,7 @@
     <!-- showcase -->
     <section class="card bg-dark text-white card-showcase border-0">
       <div class="filter">
-        <img src="images/showcase.jpg" class="card-img" alt="PCArt" />
+        <div class="showcase-img" role="presentation"></div>
         <div class="filter-apply"></div>
       </div>
       <div class="card-img-overlay ps-5">
@@ -74,7 +74,11 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nulla
           nobis sequi fugiat soluta optio!
         </p>
-        <img class="rounded col-sm-4" src="images/case1.jpg" alt="case 1 " />
+        <img
+          class="rounded img-thumbnail bg-very-dark-turquoise border-0 col-sm-4"
+          src="images/case1.jpg"
+          alt="case 1 "
+        />
       </div>
       <div
         class="
@@ -91,7 +95,11 @@
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa,
           doloribus pariatur repellendus ipsum aut assumenda.
         </p>
-        <img class="rounded col-sm-4" src="images/case2.jpg" alt="case 2" />
+        <img
+          class="rounded img-thumbnail bg-very-dark-turquoise border-0 col-sm-4"
+          src="images/case2.jpg"
+          alt="case 2"
+        />
       </div>
       <div
         class="
@@ -108,7 +116,11 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nulla
           nobis sequi fugiat soluta optio!
         </p>
-        <img class="rounded col-sm-4" src="images/case3.jpg" alt="case 3" />
+        <img
+          class="rounded img-thumbnail bg-very-dark-turquoise border-0 col-sm-4"
+          src="images/case3.jpg"
+          alt="case 3"
+        />
       </div>
     </section>
 
@@ -120,11 +132,15 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      const toggler = document.querySelector('.navbar-toggler')
-      toggler.onclick = () => {
-        const nav = document.querySelector('.navbar')
-        nav.classList.toggle('bg-transp-ebony')
-      }
+      const nav = document.querySelector('.navbar')
+
+      window.addEventListener('scroll', (event) => {
+        if (window.pageYOffset > 90) nav.classList.add('bg-transp-ebony')
+        else nav.classList.remove('bg-transp-ebony')
+      })
+
+      const toggle = document.querySelector('.navbar-toggler')
+      toggle.onclick = () => nav.classList.add('bg-transp-ebony')
     </script>
   </body>
 </html>

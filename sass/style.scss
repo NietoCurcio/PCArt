@@ -23,6 +23,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 .navbar {
   &.bg-transp-ebony {
     background: rgba(5, 8, 15, 0.95);
+    transition: background-color 0.5s;
   }
 
   .navbar-brand {
@@ -51,9 +52,11 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   .filter {
     position: relative;
 
-    img {
+    .showcase-img {
+      height: 110vh;
       width: 100%;
-      height: auto;
+      background: url('/images/showcase.jpg') no-repeat center center / cover;
+      background-attachment: fixed;
     }
 
     .filter-apply {
@@ -88,13 +91,6 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 .cases {
   background: $dark-turquoise;
-
-  .case {
-    img {
-      height: 290px;
-      width: auto;
-    }
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -111,7 +107,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   .card-showcase {
     .filter {
       img {
-        height: 62vh;
+        height: 85vh;
         width: auto;
       }
     }

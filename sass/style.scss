@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap');
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+$ebony: #05080f;
+$cerulean-blue: #2246a6;
+$careys-pink: #d39c9e;
+$bright-turquoise: #0bc6f2;
+$dark-turquoise: #044f60;
+
+$body-bg: $ebony;
+$body-color: #fff;
+
+$font-family-base: 'Dosis', sans-serif;
+
+$custom-colors: (
+  'very-dark-turquoise': #011318,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+.navbar {
+  &.bg-transp-ebony {
+    background: rgba(5, 8, 15, 0.95);
+  }
+
+  .navbar-brand {
+    h1 {
+      text-shadow: 0 0 15px $bright-turquoise;
+      text-shadow: 0px 0px 2px $bright-turquoise, 0px 0 4px $bright-turquoise;
+    }
+  }
+
+  #navbarNav {
+    justify-content: flex-end;
+
+    .navbar-nav li {
+      padding: 0 0.6rem;
+      a {
+        width: fit-content;
+        &.active {
+          border-bottom: 1px solid $bright-turquoise;
+        }
+      }
+    }
+  }
+}
+
+.card-showcase {
+  .filter {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .filter-apply {
+      background: rgba(5, 8, 15, 0.45);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0;
+    }
+  }
+
+  .card-img-overlay {
+    padding-top: 45vh;
+  }
+
+  .card-text-container {
+    padding: 0 2rem;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 2;
+    background: linear-gradient(to top, $dark-turquoise, transparent);
+  }
+}
+
+.cases {
+  background: $dark-turquoise;
+
+  .case {
+    img {
+      height: 290px;
+      width: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-showcase {
+    .card-img-overlay {
+      padding-top: 18vh;
+    }
+
+    .card-text-container {
+      padding: 0;
+    }
+  }
+
+  .card-showcase {
+    .filter {
+      img {
+        height: 62vh;
+        width: auto;
+      }
+    }
+  }
+}
+
+@import '../node_modules/bootstrap/scss/bootstrap';

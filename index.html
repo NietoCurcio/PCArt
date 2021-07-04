@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>PCArt</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+      <div class="container-fluid ps-sm-5 pe-sm-5">
+        <a class="navbar-brand" href="index.html"
+          ><h1 class="fs-4 fw-bold">PCArt</h1></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav fs-5">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- showcase -->
+    <section class="card bg-dark text-white card-showcase border-0">
+      <div class="filter">
+        <img src="images/showcase.jpg" class="card-img" alt="PCArt" />
+        <div class="filter-apply"></div>
+      </div>
+      <div class="card-img-overlay ps-5">
+        <div class="card-text-container">
+          <h1 class="card-title fw-bold font-monospace">We build setups</h1>
+          <p class="card-text ps-1 fs-5 fw-sbold">
+            Tell us your config, your idea and consider it done.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- cases -->
+    <section class="cases text-white p-5 fs-2">
+      <div
+        class="
+          case
+          row
+          align-items-center
+          mb-5
+          bg-very-dark-turquoise
+          rounded
+          p-3
+        "
+      >
+        <p class="col-sm-8">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nulla
+          nobis sequi fugiat soluta optio!
+        </p>
+        <img class="rounded col-sm-4" src="images/case1.jpg" alt="case 1 " />
+      </div>
+      <div
+        class="
+          case
+          row
+          align-items-center
+          mb-5
+          bg-very-dark-turquoise
+          rounded
+          p-3
+        "
+      >
+        <p class="col-sm-8 order-last">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+          doloribus pariatur repellendus ipsum aut assumenda.
+        </p>
+        <img class="rounded col-sm-4" src="images/case2.jpg" alt="case 2" />
+      </div>
+      <div
+        class="
+          case
+          row
+          align-items-center
+          mb-5
+          bg-very-dark-turquoise
+          rounded
+          p-3
+        "
+      >
+        <p class="col-sm-8">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nulla
+          nobis sequi fugiat soluta optio!
+        </p>
+        <img class="rounded col-sm-4" src="images/case3.jpg" alt="case 3" />
+      </div>
+    </section>
+
+    <h2>eae</h2>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const toggler = document.querySelector('.navbar-toggler')
+      toggler.onclick = () => {
+        const nav = document.querySelector('.navbar')
+        nav.classList.toggle('bg-transp-ebony')
+      }
+    </script>
+  </body>
+</html>

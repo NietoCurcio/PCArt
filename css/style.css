@@ -99,6 +99,11 @@
   background-color: transparent;
 }
 
+.about p {
+  text-justify: auto;
+  text-align: justify;
+}
+
 @media screen and (max-width: 768px) {
   .card-showcase .card-img-overlay {
     padding-top: 22vh;

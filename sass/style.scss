@@ -128,6 +128,13 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   }
 }
 
+.about {
+  p {
+    text-justify: auto;
+    text-align: justify;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .card-showcase {
     .card-img-overlay {

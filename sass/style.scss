@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap');
 @import '../node_modules/bootstrap/scss/functions';
 @import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
 
 $ebony: #05080f;
+$light-ebony: #1d2026;
 $cerulean-blue: #2246a6;
 $careys-pink: #d39c9e;
 $bright-turquoise: #0bc6f2;
 $dark-turquoise: #044f60;
+$little-light-turquoise: #23cbf3;
+$very-light-turquoise: #85e2f8;
+$little-dark-turquoise: #067691;
 
 $body-bg: $ebony;
 $body-color: #fff;
@@ -15,23 +20,25 @@ $font-family-base: 'Dosis', sans-serif;
 
 $custom-colors: (
   'very-dark-turquoise': #011318,
+  'transp-ebony': rgba(5, 8, 15, 0.95),
+  'bright-turquoise': $bright-turquoise,
+  'little-dark-turquoise': $little-dark-turquoise,
+  'ebony': $ebony,
+  'light-ebony': $light-ebony,
+  'very-light-turquoise': $very-light-turquoise,
 );
 
 // Merge the maps
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
-.navbar {
-  &.bg-transp-ebony {
-    background: rgba(5, 8, 15, 0.95);
-    transition: background-color 0.5s;
-  }
+.brand {
+  text-shadow: 0 0 15px $bright-turquoise;
+  text-shadow: 0px 0px 2px $bright-turquoise, 0px 0 4px $bright-turquoise;
+}
 
-  .navbar-brand {
-    h1 {
-      text-shadow: 0 0 15px $bright-turquoise;
-      text-shadow: 0px 0px 2px $bright-turquoise, 0px 0 4px $bright-turquoise;
-    }
-  }
+.navbar {
+  background: transparent;
+  transition: background-color 0.5s;
 
   #navbarNav {
     justify-content: flex-end;
@@ -53,7 +60,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
     position: relative;
 
     .showcase-img {
-      height: 110vh;
+      height: 105vh;
       width: 100%;
       background: url('/images/showcase.jpg') no-repeat center center / cover;
       background-attachment: fixed;
@@ -87,16 +94,44 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
     z-index: 2;
     background: linear-gradient(to top, $dark-turquoise, transparent);
   }
+
+  &.inner {
+    .card-img-overlay {
+      padding-top: 18vh;
+    }
+
+    &::after {
+      content: '';
+      width: 0;
+      height: 0;
+    }
+
+    .filter {
+      .showcase-img {
+        height: 45vh;
+      }
+
+      .filter-apply {
+        background: rgba(5, 8, 15, 0.6);
+      }
+    }
+  }
 }
 
 .cases {
   background: $dark-turquoise;
 }
 
+.contact {
+  button[type='submit'] {
+    @include button-outline-variant(#fff, $ebony, $bright-turquoise);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .card-showcase {
     .card-img-overlay {
-      padding-top: 18vh;
+      padding-top: 22vh;
     }
 
     .card-text-container {
@@ -106,12 +141,37 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
   .card-showcase {
     .filter {
-      img {
-        height: 85vh;
-        width: auto;
+      .filter-apply {
+        background: rgba(5, 8, 15, 0.6);
       }
     }
   }
+
+  .cases {
+    .card-text {
+      font-size: 24px;
+    }
+  }
+}
+
+// custom scroll bar
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $ebony;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $bright-turquoise;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $little-light-turquoise;
 }
 
 @import '../node_modules/bootstrap/scss/bootstrap';

@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>PCArt</title>
   </head>
   <body>
@@ -12,7 +19,7 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
       <div class="container-fluid ps-sm-5 pe-sm-5">
         <a class="navbar-brand" href="index.html"
-          ><h1 class="fs-4 fw-bold font-monospace">PCArt</h1></a
+          ><h1 class="fs-4 fw-bold font-monospace brand">PCArt</h1></a
         >
         <button
           class="navbar-toggler"
@@ -31,10 +38,10 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
           </ul>
         </div>
@@ -49,7 +56,7 @@
       </div>
       <div class="card-img-overlay ps-5">
         <div class="card-text-container">
-          <h1 class="card-title fw-bold font-monospace">We build setups</h1>
+          <h2 class="card-title fw-bold font-monospace fs-1">We make setups</h2>
           <p class="card-text ps-1 fs-5 fw-sbold">
             Tell us your config, your idea and consider it done.
           </p>
@@ -59,88 +66,166 @@
 
     <!-- cases -->
     <section class="cases text-white p-5 fs-2">
-      <div
-        class="
-          case
-          row
-          align-items-center
-          mb-5
-          bg-very-dark-turquoise
-          rounded
-          p-3
-        "
-      >
-        <p class="col-sm-8">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nulla
-          nobis sequi fugiat soluta optio!
-        </p>
-        <img
-          class="rounded img-thumbnail bg-very-dark-turquoise border-0 col-sm-4"
-          src="images/case1.jpg"
-          alt="case 1 "
-        />
+      <div class="card mb-3 bg-very-dark-turquoise">
+        <div class="row p-3 g-0 align-items-center">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h4 class="card-title">Build your place.</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Reiciendis error eos tenetur minus consequuntur nam?
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="images/case1.jpg" class="img-fluid" alt="case 1" />
+          </div>
+        </div>
       </div>
-      <div
-        class="
-          case
-          row
-          align-items-center
-          mb-5
-          bg-very-dark-turquoise
-          rounded
-          p-3
-        "
-      >
-        <p class="col-sm-8 order-last">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-          doloribus pariatur repellendus ipsum aut assumenda.
-        </p>
-        <img
-          class="rounded img-thumbnail bg-very-dark-turquoise border-0 col-sm-4"
-          src="images/case2.jpg"
-          alt="case 2"
-        />
+
+      <div class="card mb-3 bg-very-dark-turquoise">
+        <div class="row p-3 g-0 align-items-center">
+          <div class="col-md-8 order-last">
+            <div class="card-body">
+              <h4 class="card-title">The config suited for you.</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Reiciendis error eos tenetur minus consequuntur nam?
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="images/case2.jpg" class="img-fluid" alt="case 2" />
+          </div>
+        </div>
       </div>
-      <div
-        class="
-          case
-          row
-          align-items-center
-          mb-5
-          bg-very-dark-turquoise
-          rounded
-          p-3
-        "
-      >
-        <p class="col-sm-8">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nulla
-          nobis sequi fugiat soluta optio!
-        </p>
-        <img
-          class="rounded img-thumbnail bg-very-dark-turquoise border-0 col-sm-4"
-          src="images/case3.jpg"
-          alt="case 3"
-        />
+
+      <div class="card mb-3 bg-very-dark-turquoise">
+        <div class="row p-3 g-0 align-items-center">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h4 class="card-title">Your idea and theme, customize it.</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Reiciendis error eos tenetur minus consequuntur nam?
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="images/case3.jpg" class="img-fluid" alt="case 3" />
+          </div>
+        </div>
       </div>
     </section>
 
-    <h2>eae</h2>
+    <section class="numbers my-5 container">
+      <div class="row gap-5 align-items-center">
+        <div class="col-md d-flex align-items-center justify-content-center">
+          <div class="card w-75 bg-transparent border border-bright-turquoise">
+            <div class="card-body d-flex flex-column">
+              <h2 class="card-title fs-1 align-self-center">964</h2>
+              <h6 class="card-subtitle mb-2 text-muted">Customers</h6>
+              <p class="card-text">
+                We will always focus on making our clients satisfied.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md d-flex align-items-center justify-content-center">
+          <div class="card w-75 bg-transparent border border-bright-turquoise">
+            <div class="card-body d-flex flex-column">
+              <h2 class="card-title fs-1 align-self-center">88</h2>
+              <h6 class="card-subtitle mb-2 text-muted">Employers</h6>
+              <p class="card-text">
+                Our employers know how to attend you. They are well prepared and
+                love all of it.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md d-flex align-items-center justify-content-center">
+          <div class="card w-75 bg-transparent border border-bright-turquoise">
+            <div class="card-body d-flex flex-column">
+              <h2 class="card-title fs-1 align-self-center">108</h2>
+              <h6 class="card-subtitle mb-2 text-muted">Companies</h6>
+              <p class="card-text">
+                We also build setups and PC's for office environments or
+                companies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="mb-5 bg-little-dark-turquoise">
+      <div class="container p-5">
+        <div class="col-12 row align-items-center gap-5">
+          <div class="col-md-5">
+            <img src="images/case1.jpg" class="w-100 rounded" alt="Computer" />
+          </div>
+          <div class="col-md-6 fs-4 p-3 bg-light-ebony rounded">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
+            aut pariatur facilis qui? Modi placeat illo unde ipsa consectetur
+            saepe facere aliquid similique molestiae nesciunt eum, adipisci
+            provident dolore obcaecati assumenda magni in sed dignissimos cum
+            doloribus deserunt! Dignissimos, reprehenderit. Iste rem enim earum
+            aliquam. Doloribus ipsa rem illo impedit?
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="border-top border-bright-turquoise">
+      <div class="container">
+        <div class="row p-5 justify-content-between">
+          <div class="col row align-items-center gap-4">
+            <h3 class="col-2 brand m-0">PCArt</h3>
+            <p class="col m-0 pt-1">All rights reserved &copy;</p>
+          </div>
+          <div class="col row justify-content-end align-items-center">
+            <p class="col-2 m-0">
+              <a
+                class="text-bright-turquoise"
+                href="https://github.com/NietoCurcio"
+                target="_blank"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+            </p>
+            <p class="col-2 m-0">
+              <a
+                class="text-bright-turquoise"
+                href="https://www.facebook.com/felipeantonio.nieto"
+                target="_blank"
+                ><i class="fab fa-facebook fa-2x"></i
+              ></a>
+            </p>
+            <p class="col-2 m-0">
+              <a
+                class="text-bright-turquoise"
+                href="https://www.instagram.com/felipecurccio/"
+                target="_blank"
+                ><i class="fab fa-instagram fa-2x"></i
+              ></a>
+            </p>
+            <p class="col-2 m-0">
+              <a
+                class="text-bright-turquoise"
+                href="https://www.linkedin.com/in/felipe-antonio-nieto-curcio-9b865116a/"
+                target="_blank"
+                ><i class="fab fa-linkedin fa-2x"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script>
-      const nav = document.querySelector('.navbar')
-
-      window.addEventListener('scroll', (event) => {
-        if (window.pageYOffset > 90) nav.classList.add('bg-transp-ebony')
-        else nav.classList.remove('bg-transp-ebony')
-      })
-
-      const toggle = document.querySelector('.navbar-toggler')
-      toggle.onclick = () => nav.classList.add('bg-transp-ebony')
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

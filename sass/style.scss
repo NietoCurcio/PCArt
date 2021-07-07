@@ -58,11 +58,18 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 .card-showcase {
   .filter {
     position: relative;
+    height: 110vh;
 
     .showcase-img {
-      height: 105vh;
+      position: absolute;
+      height: 100%;
       width: 100%;
-      background: url('/images/showcase.jpg') no-repeat center center / cover;
+      top: 0;
+      left: 0;
+      background: url('/images/showcase.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
       background-attachment: fixed;
     }
 
@@ -77,7 +84,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   }
 
   .card-img-overlay {
-    padding-top: 45vh;
+    padding-top: 35vh;
   }
 
   .card-text-container {
@@ -96,6 +103,10 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   }
 
   &.inner {
+    .filter {
+      height: 45vh;
+    }
+
     .card-img-overlay {
       padding-top: 18vh;
     }
@@ -104,16 +115,6 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
       content: '';
       width: 0;
       height: 0;
-    }
-
-    .filter {
-      .showcase-img {
-        height: 45vh;
-      }
-
-      .filter-apply {
-        background: rgba(5, 8, 15, 0.6);
-      }
     }
   }
 }
@@ -144,12 +145,10 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
     .card-text-container {
       padding: 0;
     }
-  }
 
-  .card-showcase {
     .filter {
       .filter-apply {
-        background: rgba(5, 8, 15, 0.6);
+        background: rgba(5, 8, 15, 0.65);
       }
     }
   }

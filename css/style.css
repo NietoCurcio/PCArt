@@ -24,11 +24,18 @@
 
 .card-showcase .filter {
   position: relative;
+  height: 110vh;
 }
 .card-showcase .filter .showcase-img {
-  height: 105vh;
+  position: absolute;
+  height: 100%;
   width: 100%;
-  background: url("/images/showcase.jpg") no-repeat center center/cover;
+  top: 0;
+  left: 0;
+  background: url("/images/showcase.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   background-attachment: fixed;
 }
 .card-showcase .filter .filter-apply {
@@ -40,7 +47,7 @@
   left: 0;
 }
 .card-showcase .card-img-overlay {
-  padding-top: 45vh;
+  padding-top: 35vh;
 }
 .card-showcase .card-text-container {
   padding: 0 2rem;
@@ -55,6 +62,9 @@
   z-index: 2;
   background: linear-gradient(to top, #044f60, transparent);
 }
+.card-showcase.inner .filter {
+  height: 45vh;
+}
 .card-showcase.inner .card-img-overlay {
   padding-top: 18vh;
 }
@@ -62,12 +72,6 @@
   content: "";
   width: 0;
   height: 0;
-}
-.card-showcase.inner .filter .showcase-img {
-  height: 45vh;
-}
-.card-showcase.inner .filter .filter-apply {
-  background: rgba(5, 8, 15, 0.6);
 }
 
 .cases {
@@ -111,9 +115,8 @@
   .card-showcase .card-text-container {
     padding: 0;
   }
-
   .card-showcase .filter .filter-apply {
-    background: rgba(5, 8, 15, 0.6);
+    background: rgba(5, 8, 15, 0.65);
   }
 
   .cases .card-text {

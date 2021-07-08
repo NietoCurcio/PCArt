@@ -4,7 +4,7 @@
 
 <p align="center">
 
-<img src="https://github.com/NietoCurcio/pcart/blob/main/.github/images/showcase.png?raw=true" width="750" alt="PCArt">
+<img src="https://github.com/NietoCurcio/pcart/blob/main/.github/showcase.png?raw=true" width="750" alt="PCArt">
 
 </p>
 
@@ -16,7 +16,7 @@ This project uses [Sass (CSS preprocessor)](https://sass-lang.com/) to perform c
 
 Bootstrap is straightforward on building responsive websites, since it uses mobile-first approach and makes available various classes based on breakpoints (width of the viewport).
 
-<img src="https://github.com/NietoCurcio/pcart/blob/main/.github/images/responsiveness.png?raw=true" width="280" alt="PCArt">
+<img src="https://github.com/NietoCurcio/pcart/blob/main/.github/responsiveness.png?raw=true" width="280" alt="PCArt">
 
 ## Webpack
 

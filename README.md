@@ -2,6 +2,8 @@
 
 > A company Website that builds PC's and Setups.
 
+https://pcart-curcio.netlify.app/
+
 <p align="center">
 
 <img src="https://github.com/NietoCurcio/pcart/blob/main/.github/showcase.png?raw=true" width="750" alt="PCArt">
@@ -39,8 +41,6 @@ Plugins and loaders used in this project:
 Webpack generates the `build` folder. It's configured through the `webpack.config.js` file and the `npm run build` script executes the bundling task.
 
 This script and the build generated is used by [Netlify](https://www.netlify.com/) to deploy the Website.
-
-- https://pcart-curcio.netlify.app/
 
 ## Full stack Web development with React
 

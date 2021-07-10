@@ -2,9 +2,11 @@
 
 > A company Website that builds PC's and Setups.
 
+https://pcart-curcio.netlify.app/
+
 <p align="center">
 
-<img src="https://github.com/NietoCurcio/pcart/blob/main/.github/images/showcase.png?raw=true" width="750" alt="PCArt">
+<img src="https://github.com/NietoCurcio/pcart/blob/main/.github/showcase.png?raw=true" width="750" alt="PCArt">
 
 </p>
 
@@ -16,7 +18,7 @@ This project uses [Sass (CSS preprocessor)](https://sass-lang.com/) to perform c
 
 Bootstrap is straightforward on building responsive websites, since it uses mobile-first approach and makes available various classes based on breakpoints (width of the viewport).
 
-<img src="https://github.com/NietoCurcio/pcart/blob/main/.github/images/responsiveness.png?raw=true" width="280" alt="PCArt">
+<img src="https://github.com/NietoCurcio/pcart/blob/main/.github/responsiveness.png?raw=true" width="280" alt="PCArt">
 
 ## Webpack
 
@@ -39,8 +41,6 @@ Plugins and loaders used in this project:
 Webpack generates the `build` folder. It's configured through the `webpack.config.js` file and the `npm run build` script executes the bundling task.
 
 This script and the build generated is used by [Netlify](https://www.netlify.com/) to deploy the Website.
-
-- https://pcart-curcio.netlify.app/
 
 ## Full stack Web development with React
 
